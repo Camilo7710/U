@@ -1,1 +1,1 @@
-Pagina web de un sitio inmobiliario con una calculadora funcionalm.
+Pagina web de un sitio inmobiliario con una calculadora funcional.
