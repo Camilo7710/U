@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>📱 Calculadora</h1>
+
+  <div class="calculator-container">
+    <input type="text" id="display" readonly class="calc-display">
+
+    <div class="buttons">
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="operate('/')">÷</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="operate('*')">×</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="operate('-')">−</button>
+
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="operate('+')">+</button>
+
+      <button onclick="squareRoot()">√</button>
+      <button onclick="power()">x²</button>
+      <button onclick="percentage()">%</button>
+      <button onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+
+  <div class="developer-card">
+    <img src="img/camilo.jpg" alt="Desarrollador" class="developer-photo">
+    <h2>👨‍💻 Desarrollador de la Calculadora</h2>
+    <p>Marlon Camilo Rada Archila</p>
+  </div>
+
+  <div class="currency-converter">
+    <h2>💱 Convertidor de Divisas</h2>
+    <input type="number" id="amount" placeholder="Ingrese cantidad">
+
+    <select id="fromCurrency">
+      <option value="USD">USD - Dólar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="COP">COP - Peso Colombiano</option>
+    </select>
+
+    <select id="toCurrency">
+      <option value="COP">COP - Peso Colombiano</option>
+      <option value="USD">USD - Dólar</option>
+      <option value="EUR">EUR - Euro</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convertir</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
